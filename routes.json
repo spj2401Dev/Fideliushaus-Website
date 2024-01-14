@@ -1,0 +1,7 @@
+{
+    "finger weg": "Do not do stupid shit. This is a live enviorment. Changes apply instantly! If you don't know what you are doin'. Don't.",
+    "index": "/public/app/index.html",
+    "/indexstyle.css": "/public/app/style.css",
+    "/favicon.ico": "/public/images/favicon.ico",
+    "/paralax.js": "/public/libs/paralax.js"
+}

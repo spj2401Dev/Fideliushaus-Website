@@ -1,0 +1,116 @@
+:root {
+    --walnut-brown-900: #FFE6A9;
+    --walnut-brown-700: #9e8f7e;
+    --walnut-brown-500: #6b6054;
+    --green-100: #9EA729; 
+    --walnut-brown-100: #4C1E0B; 
+}
+
+body {
+    background-color: var(--green-100);
+    margin: 0px;
+    padding: 0px;
+    font-family: 'FiraSans-Regular', sans-serif;
+} 
+
+header {
+    width: 100%;
+    height: 85px;
+    z-index: 10;
+    position: fixed;
+}
+
+    .logo {
+        height: 170px;
+        display: block;
+        z-index: 10;
+        justify-content: start;
+        transition: all 0.5s ease;
+    }
+
+    .logoimg {
+        height: 170px;
+        min-height: 70px;
+        margin-top: 6px;
+        z-index: 10;
+        transition: all 0.5s ease;
+        background-color: transparent;
+        padding-top: 35px;
+        padding-left: 200px;
+    }
+
+.hero {
+    height: calc(100vh - 85px);
+    width: 100%;
+    margin: 0px;
+    z-index: 0;
+}
+
+#heroimg {
+    object-fit: cover;
+    z-index: 0;
+    width: 100%;
+    height: calc(100vh - 85px);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: calc(100% - 160px);
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(158, 167, 41, 0), #9EA729 50%); /* Make sure to adjust the color here too!!! */
+    z-index: 1;
+}
+
+.welcome {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    height: 330px;
+    width: 65%;
+    color: var(--walnut-brown-900);
+    background-color: var(--walnut-brown-100);
+    padding: 20px;
+    padding-left: 50px;
+    margin: 0px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 50px -1px rgba(0,0,0,0.61); 
+    box-shadow: 0px 0px 50px -1px rgba(0,0,0,0.61);
+    transition: all 0.5s ease;
+    z-index: 999;
+}
+
+@media screen and (max-width: 600px) {
+    .welcome {
+        position: static;
+        height: 278px;
+        width: calc(100% - 40px);
+        background-color: var(--walnut-brown-100);
+        transition: all 0.5s ease;
+    }
+}
+
+.Welcome-Header {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 44px;
+}
+
+.Welcome-End {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 24px;
+}
+
+.line {
+    background-color: var(--walnut-brown-900);
+    width: 158px;
+    height: 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
