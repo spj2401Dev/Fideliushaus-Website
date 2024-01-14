@@ -69,3 +69,5 @@ cd ..
 cd home
 cd fideliushaus
 ```
+
+https://xd.adobe.com/view/29986357-8eed-4583-9ba4-9a550b113134-7ccb/screen/78bc18b8-791f-4e50-bfcf-f1e1e6034142/specs/

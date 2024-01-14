@@ -66,14 +66,16 @@ header {
 
 .welcome {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 10%;
-    height: 330px;
-    width: 65%;
+    height: auto;
+    width: 40%;
     color: var(--walnut-brown-900);
     background-color: var(--walnut-brown-100);
     padding: 20px;
     padding-left: 50px;
+    padding-bottom: 40px;
+    padding-right: 50px;
     margin: 0px;
     border-radius: 4px;
     -webkit-box-shadow: 0px 0px 50px -1px rgba(0,0,0,0.61); 
@@ -82,13 +84,33 @@ header {
     z-index: 999;
 }
 
+@media screen and (max-width: 1280px) {
+    .welcome {
+        top: 40%;
+        width: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 @media screen and (max-width: 600px) {
     .welcome {
         position: static;
-        height: 278px;
+        height: auto;
+        padding: 0px;
+        padding-top: 30px;
+        padding-left: 40px;
+        padding-right: 20px;
         width: calc(100% - 40px);
         background-color: var(--walnut-brown-100);
         transition: all 0.5s ease;
+        transform: translateX(0%);
+        padding-bottom: 60px;
+    }
+
+    #heroimg {
+        object-fit: contain;
+        height: auto;
     }
 }
 
@@ -113,4 +135,9 @@ header {
     height: 8px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.Welcome-Middle {
+    color: white;
+    font-size: 24px;
 }
