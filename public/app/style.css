@@ -3,6 +3,7 @@
     --walnut-brown-700: #9e8f7e;
     --walnut-brown-500: #6b6054;
     --green-100: #9EA729; 
+    --green-200: #7d8500;
     --walnut-brown-100: #4C1E0B; 
 }
 
@@ -77,7 +78,6 @@ header {
     padding-bottom: 40px;
     padding-right: 50px;
     margin: 0px;
-    border-radius: 4px;
     -webkit-box-shadow: 0px 0px 50px -1px rgba(0,0,0,0.61); 
     box-shadow: 0px 0px 50px -1px rgba(0,0,0,0.61);
     transition: all 0.5s ease;
@@ -140,4 +140,52 @@ header {
 .Welcome-Middle {
     color: white;
     font-size: 24px;
+}
+
+.ZimmerComponent {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Zimmer {
+    background-color: var(--green-200);
+}
+
+.ZimmerHeader {
+    background-color: var(--walnut-brown-100);
+    font-size: 22px;
+    padding-left: 50px;
+    padding-top: 30px;
+    width: 480px;
+    margin: 0px;
+    height: 66px;
+    color: white;
+    text-align: right;
+}
+
+.ZimmerHeaderText {
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.ZimmerComponentPictures {
+    width: 100%;
+}
+
+.Zimmer {
+    width: 100%;
+}
+
+.ZimmerComponentPictures img {
+    max-width: 40%;
+    height: auto;
+    text-align: left;
+}
+
+.ZimmerComponentPictures img:first-child {
+    margin-right: 50px;
 }
